@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
+html {
+  position: relative;
+}
 /* element selectors*/
 body {
   background-color: blanchedalmond;
@@ -13,13 +15,24 @@ header {
   background-color: rgb(194, 126, 126);
 }
 
+section figure {
+  align-self: center;
+}
 footer {
   display: block;
   position: absolute;
   bottom: 0px;
-  margin-top: 0px;
+  width: 100%;
+  box-sizing: border-box;
   padding: 20px;
   background-color: rgb(234, 154, 49);
+  margin-top: 50px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
 }
 /*class selectors*/
 .image {
@@ -28,11 +41,11 @@ footer {
 }
 
 .mainsection {
-  position: absolute;
   left: 20px;
-  margin-top: 20px;
   background-color: azure;
   padding: 40px;
   display: flex;
   border-radius: 15px;
+  margin-bottom: 100px;
+  margin-top: 50px;
 }
